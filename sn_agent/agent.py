@@ -5,6 +5,20 @@ import os
 
 class SnClassifier:
     '''
+    Prerequisite:
+    1. A `tokenizer` folder under the same directory to be loaded by `AutoTokenizer`, it contains:
+       - `added_tokens.json`
+       - `merges.txt`
+       - `special_tokens_map.json`
+       - `tokenizer_config.json`
+       - `tokenizer.json`
+       - `vocab.json`
+    2. A `model` folder under the same directory to be loaded by `AutoModelForSequenceClassification`,
+       it contains:
+       - `config.json`
+       - `model.safetensors`.
+    3. `OPENAI_API_KEY` set in `os.environ`
+
     Example:
     from sn_agent import SnClassifier
     classifier = SnClassifier()
