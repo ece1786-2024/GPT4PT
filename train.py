@@ -22,13 +22,6 @@ def compute_loss(model, inputs):
         ]
     """
 
-    # Passing through the model
-    print(inputs)
-    print(inputs['input_ids'].shape)
-    print(inputs['labels'])
-    print(inputs['labels'].shape)
-
-    
     outputs = model(**inputs)
 
     # maybe outputs.logits

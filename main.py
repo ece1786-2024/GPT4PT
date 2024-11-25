@@ -1,6 +1,6 @@
 # from ie_agent import IeClassifier
-from sn_agent import SnClassifier
-# from tf_agent import TfClassifier
+# from sn_agent import SnClassifier
+from tf_agent.agent import TfClassifier
 # from jp_agent import JpClassifier
 
 
@@ -8,10 +8,11 @@ from sn_agent import SnClassifier
 # c1 = IeClassifier().start()
 
 # Sensing (S) and Intuition (N)
-c2 = SnClassifier().start()
+# c2 = SnClassifier().start()
 
 # Thinking (T) and Feeling (F)
-#c3 = TfClassifier().start()
+
+c3 = TfClassifier().start()
 
 # Judging (J) and Perceiving (P)
 #c4 = JpClassifier().start()
