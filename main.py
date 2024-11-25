@@ -1,4 +1,8 @@
+# from ie_agent import IeClassifier
 from sn_agent import SnClassifier
+# from tf_agent import TfClassifier
+# from jp_agent import JpClassifier
+
 
 # Introvert (I) and Extrovert (E)
 # c1 = IeClassifier().start()
